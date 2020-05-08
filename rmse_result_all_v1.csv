@@ -1,0 +1,2 @@
+,Model,train_rmse,valid_rmse,12h_pred_rmse,train_time
+0,LSTM_GRU,0.12042472105134724,0.19301809865319183,0.13156501777637974,1.15
