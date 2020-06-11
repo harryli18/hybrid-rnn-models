@@ -1,0 +1,2 @@
+,Model,train_rmse,valid_rmse,train_time
+0,LSTM_3,0.15871414487920651,0.2503967926736362,14.84
