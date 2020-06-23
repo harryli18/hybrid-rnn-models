@@ -1,2 +1,5 @@
-# This is a RNN related master project
+# Hybrid Deep Learning Models for Air Quality Predictions
+
+Without effective policy to tackle air pollution, the world’s air will become more and more polluted. Hence understanding the future of the air quality is vital to the population health for every country. PM2.5 concentration is an important indicator of the air quality in a city. The main objective is to find the best deep learning model to predict the PM2.5 concentration for the Beijing multisite dataset.  This thesis compared the performance of mainstream models GRU and LSTM model. The study found that LSTM is generally more accurate than GRU. This thesis also studied hybrid RNN models and found them to be more stable than traditional RNN models.  Increase the number of layers in the RNN models does not improve the accuracy in general. Moreover, two recently developed ‘state-of-art’ CNN-RNN models (DFS and CBGRU) are studied and compared their performances. However, DFS and CBGRU performed significantly worse than the RNN or hybrid RNN models. The models are also trained over different datasets, sequence lengths, and hyper-parameters. The effects of these changes in the model training on the performances are also evaluated. 
+
 Author: Harry Li
