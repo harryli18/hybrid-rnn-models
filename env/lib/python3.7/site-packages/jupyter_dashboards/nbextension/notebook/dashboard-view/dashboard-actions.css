@@ -1,0 +1,65 @@
+/**
+ * Copyright (c) Jupyter Development Team.
+ * Distributed under the terms of the Modified BSD License.
+ */
+
+.jupyter-dashboard-menu-item {
+    position: relative;
+}
+.jupyter-dashboard-menu-item.selected::before {
+    font-family: FontAwesome;
+    content: '\f00c';
+    position: absolute;
+    left: 4px;
+    top: 3px;
+}
+
+.jupyter-dashboard-toolbar-buttons {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+         -ms-flex-align: center;
+            align-items: center;
+}
+#maintoolbar .jupyter-dashboard-toolbar-buttons .navbar-text {
+    margin: 0 5px;
+}
+
+/* Dashboard authoring button with embedded layout dropdown */
+#jupyter-dashboard-view-toolbar-buttons > button:first-of-type {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+#jupyter-dashboard-view-toolbar-buttons > .dashboard-authoring-btn-container {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-width: 0;
+    padding: 0;
+}
+#jupyter-dashboard-view-toolbar-buttons > .dashboard-authoring-btn-container .dashboard-authoring-btn,
+#jupyter-dashboard-view-toolbar-buttons > .dashboard-authoring-btn-container .db-embedded-dropdown-toggle {
+    border-radius: 0;
+    border-color: inherit;
+}
+#jupyter-dashboard-view-toolbar-buttons > .dashboard-authoring-btn-container .dashboard-authoring-btn {
+    border-right: none;
+    background-color: transparent;
+}
+#jupyter-dashboard-view-toolbar-buttons > .dashboard-authoring-btn-container .db-embedded-dropdown-toggle {
+    border-left: none;
+    background-color: transparent;
+}
+#jupyter-dashboard-view-toolbar-buttons .dashboard-layout-menu-item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+#jupyter-dashboard-view-toolbar-buttons .dashboard-layout-menu-item a {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+#jupyter-dashboard-view-toolbar-buttons .dashboard-layout-menu-item a i {
+    margin-right: 8px;
+}

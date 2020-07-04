@@ -1,0 +1,67 @@
+<!-- Copyright (c) Jupyter Development Team.
+     Distributed under the terms of the Modified BSD License. -->
+<style>
+    .help-area {
+        position: relative;
+    }
+    .view-only .help-area {
+        display: none;
+    }
+    .help-area .help-snippet {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .help-area .show-code-label {
+        position: absolute;
+        right: 0;
+    }
+    .help-area .more-info-link {
+        font-variant: small-caps;
+        margin-left: 0.5em;
+    }
+    .help-area .alert-info {
+        display: flex;
+        justify-content: center;
+        max-width: 45em;
+        margin: 1em auto 0 auto;
+        box-shadow: 0 2px 7px 0 rgba(87,87,87,0.2);
+    }
+    .help-area:not(.show-more) .alert-info {
+        display: none;
+    }
+    .help-area .help-details-list {
+        list-style-type: none;
+        padding: 0;
+    }
+</style>
+<div class="help-area container">
+    <div class="help-snippet">
+        <span class="help-snippet-text">Dashboard authoring: create your dashboard.</span>
+        <a class="more-info-link" href="#">more info</a>
+        <label class="show-code-label"><input type="checkbox" checked="true"> Show code on hover</label>
+    </div>
+    <div class="alert alert-info">
+        <ul class="help-details-list">
+            <li><strong>Hide cell: </strong>Click <span class="fa fa-close"></span> to hide a cell from the dashboard view.</li>
+            <li><strong>Show cell: </strong>Click <span class="fa fa-plus"></span> to return a hidden cell to the dashboard view.</li>
+            <li><strong>Hide/Show all: </strong>Select the options under <strong>Cell > Dashboard</strong> to hide or show all cells.</li>
+            <li><strong>Edit cell: </strong>Click <span class="fa fa-pencil"></span> to jump to the Notebook and edit the code.</li>
+        </ul>
+    </div>
+</div>
+<script>
+    (function() {
+        // always show code by default
+        $('#notebook-container').removeClass('hide-code');
+        
+        // show or hide code on cell hover
+        $('.show-code-label input').change(function() {
+            $('#notebook-container').toggleClass('hide-code', !this.checked);
+        });
+        
+        // show or hide more info on link click
+        $('.more-info-link').click(function() {
+            $(this).parents('.help-area').toggleClass('show-more', 200);
+        });
+    })();
+</script>

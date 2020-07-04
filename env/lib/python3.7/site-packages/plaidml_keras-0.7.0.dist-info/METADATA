@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: plaidml-keras
+Version: 0.7.0
+Summary: PlaidML Keras backend implementation.
+Home-page: https://www.intel.ai/plaidml/
+Author: Vertex.AI
+Author-email: plaidml-dev@googlegroups.com
+License: https://www.apache.org/licenses/LICENSE-2.0
+Keywords: development ml keras
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: plaidml
+Requires-Dist: keras (==2.2.4)
+Requires-Dist: six
+
+PlaidML-Keras implements a Keras backend using PlaidML.
+
+

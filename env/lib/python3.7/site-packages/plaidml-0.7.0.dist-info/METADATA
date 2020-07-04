@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: plaidml
+Version: 0.7.0
+Summary: PlaidML machine learning accelerator
+Home-page: https://www.intel.ai/plaidml/
+Author: Vertex.AI
+Author-email: plaidml-dev@googlegroups.com
+License: https://www.apache.org/licenses/LICENSE-2.0
+Keywords: development ml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: cffi
+Requires-Dist: enum34 (>=1.1.6)
+Requires-Dist: numpy
+Requires-Dist: six
+
+PlaidML is a framework for making machine learning work everywhere.
+
+

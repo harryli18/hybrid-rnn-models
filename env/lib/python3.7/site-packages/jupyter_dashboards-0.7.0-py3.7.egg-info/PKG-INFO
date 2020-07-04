@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: jupyter-dashboards
+Version: 0.7.0
+Summary: Extension for Jupyter Notebook for laying out, viewing, and deploying notebooks as dynamic dashboards
+Home-page: https://github.com/jupyter/dashboards
+Author: Jupyter Development Team
+Author-email: jupyter@googlegroups.com
+License: BSD
+Description: 
+            This package adds the following features to Jupyter Notebook:
+        
+        * Dashboard layout mode for arranging notebook cell outputs in a grid-like fashion
+        * Dashboard view mode for interacting with an assembled dashboard within the Jupyter Notebook
+        * Ability to share notebooks with dashboard layout metadata in them with other Jupyter Notebook users
+        
+        See `the project README <https://github.com/jupyter/dashboards>`_
+        for more information.
+        
+Platform: Jupyter Notebook 4.x
+Platform: Jupyter Notebook 5.x
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

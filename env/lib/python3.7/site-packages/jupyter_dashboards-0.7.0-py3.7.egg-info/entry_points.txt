@@ -1,0 +1,3 @@
+[console_scripts]
+jupyter-dashboards = jupyter_dashboards.extensionapp:main
+
